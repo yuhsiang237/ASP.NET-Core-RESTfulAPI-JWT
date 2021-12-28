@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YHkH18UEejSIV363XPBkosaagSAPsUYb5ZE4wU9psOdtV6EAtWDWyQUWif1S12LbJQgulfXgz1H/wfXIleWQcg==",
+  "dgSpecHash": "8CQiHfqH+kdmVi+K6tYqNf0sbq8Zr4odW4WnxBRtaqem/+cSWNG40UV42UeYBkiXJbSfIiOYCr7b/VJv1Rkr3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
+  "projectFilePath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IDEA3C\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.22\\microsoft.aspnetcore.authentication.jwtbearer.3.1.22.nupkg.sha512",
     "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

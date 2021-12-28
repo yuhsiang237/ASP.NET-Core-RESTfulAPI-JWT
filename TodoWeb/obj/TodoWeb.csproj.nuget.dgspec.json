@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj": {}
+    "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj": {
+    "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
+        "projectUniqueName": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
         "projectName": "TodoWeb",
-        "projectPath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
+        "projectPath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
         "packagesPath": "C:\\Users\\IDEA3C\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\obj\\",
+        "outputPath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
