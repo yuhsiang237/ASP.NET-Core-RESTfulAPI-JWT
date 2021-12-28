@@ -17,6 +17,9 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.Extensions.Options;
 using ApiVersioningSample;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace TodoAPI
 {
@@ -55,10 +58,61 @@ namespace TodoAPI
                     // note: this option is only necessary when versioning by url segment. the SubstitutionFormat
                     // can also be used to control the format of the API version in route templates
                     options.SubstituteApiVersionInUrl = true;
+          
                 });
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(options=> {
+             
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Please insert JWT with Bearer into field",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement { 
+                   {
+                     new OpenApiSecurityScheme
+                     {
+                       Reference = new OpenApiReference // Bearer JWT Token欄位
+                       {
+                         Type = ReferenceType.SecurityScheme,
+                         Id = "Bearer"
+                       }
+                      },
+                      new string[] { }
+                    }
+                  });
+            });
 
+            services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        // 當驗證失敗時，回應標頭會包含 WWW-Authenticate 標頭，這裡會顯示失敗的詳細錯誤原因
+        options.IncludeErrorDetails = true; // 預設值為 true，有時會特別關閉
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+         
+            // 一般我們都會驗證 Issuer
+            ValidateIssuer = true,
+            ValidIssuer = "JwtAuthDemo",
+
+            // 通常不太需要驗證 Audience
+            ValidateAudience = false,
+            //ValidAudience = "JwtAuthDemo", // 不驗證就不需要填寫
+
+            // 一般我們都會驗證 Token 的有效期間
+            ValidateLifetime = true,
+
+            // 如果 Token 中包含 key 才需要驗證，一般都只有簽章而已
+            ValidateIssuerSigningKey = false,
+
+            // JWT簽證密要，之後可自行設定在appsettings.json
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ASASA1@AAASASASASA1@AAASAS"))
+            };
+        });
 
         }
 
@@ -74,8 +128,9 @@ namespace TodoAPI
 
             app.UseRouting();
 
+            app.UseAuthentication(); 
             app.UseAuthorization();
-            
+
             // swagger 配置
             app.UseSwagger();
             app.UseSwaggerUI(

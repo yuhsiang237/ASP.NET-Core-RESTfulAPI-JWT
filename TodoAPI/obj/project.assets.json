@@ -11,6 +11,21 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
         "type": "package",
         "compile": {
@@ -1645,6 +1660,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.22": {
+      "sha512": "YiQJYVrJg4gvf1gnjXk1noWqROGG2kQ6eZg0v0KFoWswZH2fiWPLJ3iHom+m9D4bAZqRZnN/VOOMs3pORU5+FQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.22.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
@@ -6073,6 +6103,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.22",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
@@ -6093,11 +6124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
       "projectName": "TodoAPI",
-      "projectPath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
+      "projectPath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\TodoAPI.csproj",
       "packagesPath": "C:\\Users\\IDEA3C\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\obj\\",
+      "outputPath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6132,6 +6163,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.22, )"
+          },
           "Microsoft.AspNetCore.Mvc.Versioning": {
             "target": "Package",
             "version": "[5.0.0, )"

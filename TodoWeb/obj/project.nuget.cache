@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CN75rfQnaiPxOen+hA9GYUF31fTsfCwZtbWF9b4NahIq5nSVfyExudqe5o2HiAQzcLtuWQwCeV3zLkWYGZhGMQ==",
+  "dgSpecHash": "wBrW1FcViU8CAC449XZUF6i8UqjtbKnRWBfPAUi1Jjwgn1tR97RGLsCNSptwQXLsXOgExi1G3SYD1iLxs9M4MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IDEA3C\\Documents\\work\\20211017\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
+  "projectFilePath": "C:\\Users\\IDEA3C\\Desktop\\新增資料夾 (30)\\ASP.NET-Core-RESTfulAPI-JWT\\TodoWeb\\TodoWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.18\\microsoft.aspnetcore.mvc.razor.extensions.3.1.18.nupkg.sha512",
     "C:\\Users\\IDEA3C\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.18\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.18.nupkg.sha512",
