@@ -34,7 +34,7 @@
 
 
 </tbody></table>
-{apiVersion} 請輸入V2，在第二版本才有JWT Token功能
+{apiVersion} 請輸入v2，在第二版本才有JWT Token功能
 
 ### DEMO
 
