@@ -39,3 +39,6 @@
 ### DEMO
 
 <img src="demo.gif">
+
+使用Postman
+<img src="postmandemo.gif">
